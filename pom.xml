@@ -72,6 +72,10 @@
                     <minimizeJar>true</minimizeJar>
                     <relocations>
                         <relocation>
+                            <pattern>io.github.mooy1.infinitylib</pattern>
+                            <shadedPattern>me.lucasgithuber.obsidianexpansion.infinitylib</shadedPattern>
+                        </relocation>
+                        <relocation>
                             <pattern>io.papermc.lib</pattern>
                             <shadedPattern>me.lucasgithuber.obsidianexpansion.paperlib</shadedPattern>
                         </relocation>
