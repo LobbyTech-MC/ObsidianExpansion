@@ -1,17 +1,9 @@
 package me.lucasgithuber.obsidianexpansion.items;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
-import io.github.thebusybiscuit.slimefun4.core.handlers.ItemDropHandler;
-import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.List;
 
-import me.lucasgithuber.obsidianexpansion.Items;
-import me.lucasgithuber.obsidianexpansion.ObsidianExpansion;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -24,9 +16,17 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.util.List;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
+import io.github.thebusybiscuit.slimefun4.core.handlers.ItemDropHandler;
+import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import me.lucasgithuber.obsidianexpansion.Items;
+import me.lucasgithuber.obsidianexpansion.ObsidianExpansion;
 
 public class AngelGemT2 extends SlimefunItem implements NotPlaceable, Listener {
 

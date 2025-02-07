@@ -2,7 +2,6 @@ package me.lucasgithuber.obsidianexpansion.resources;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import org.bukkit.entity.IronGolem;
 import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;

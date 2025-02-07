@@ -1,5 +1,25 @@
 package me.lucasgithuber.obsidianexpansion.utils;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.UUID;
+
+import javax.annotation.Nonnull;
+import javax.annotation.ParametersAreNonnullByDefault;
+
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.Sound;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.PlayerInventory;
+
 import io.github.mooy1.infinitylib.common.Scheduler;
 import io.github.mooy1.infinitylib.common.StackUtils;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -19,17 +39,6 @@ import me.lucasgithuber.obsidianexpansion.Items;
 import me.lucasgithuber.obsidianexpansion.machines.ObsidianForge;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
-import org.bukkit.ChatColor;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.Sound;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.PlayerInventory;
-
-import javax.annotation.Nonnull;
-import javax.annotation.ParametersAreNonnullByDefault;
-import java.util.*;
 
 /**
  * A custom category for displaying 6x6 recipes and their sub-recipes

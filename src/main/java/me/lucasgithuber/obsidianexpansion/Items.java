@@ -1,5 +1,16 @@
 package me.lucasgithuber.obsidianexpansion;
 
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
+import org.bukkit.Material;
+import org.bukkit.Particle;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+
 import io.github.bakedlibs.dough.items.CustomItemStack;
 import io.github.mooy1.infinitylib.machines.MachineLore;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -20,16 +31,6 @@ import me.lucasgithuber.obsidianexpansion.resources.PhantomScale;
 import me.lucasgithuber.obsidianexpansion.utils.Armor;
 import me.lucasgithuber.obsidianexpansion.utils.Categories;
 import net.md_5.bungee.api.ChatColor;
-import org.bukkit.Material;
-import org.bukkit.Particle;
-import org.bukkit.enchantments.Enchantment;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
-
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 
 
 public class Items{
@@ -403,8 +404,8 @@ public class Items{
                 null, null, null, null, null, null,
         }, new Particle[]{Particle.HEART}).register(omc);
         new Armor(Categories.OMC_FORGE_CHEAT, OBSIDIAN_CHESTPLATE, new PotionEffect[]{
-                new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 600, 1, false, false, false),
-                new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 600, 1, false, false, false),
+                new PotionEffect(PotionEffectType.STRENGTH, 600, 1, false, false, false),
+                new PotionEffect(PotionEffectType.RESISTANCE, 600, 1, false, false, false),
                 new PotionEffect(PotionEffectType.SATURATION, 600, 3, false, false, false),
         }, new ItemStack[]{
                 null, DRAGON_SCALE, null, null, DRAGON_SCALE, null,
@@ -415,7 +416,7 @@ public class Items{
                 null, null, getItem("INFINITE_INGOT"), getItem("INFINITE_INGOT"), null, null
         }, new Particle[]{Particle.HEART}).register(omc);
         new Armor(Categories.OMC_FORGE_CHEAT, OBSIDIAN_LEGGINGS, new PotionEffect[]{
-                new PotionEffect(PotionEffectType.FAST_DIGGING, 600, 2, false, false, false),
+                new PotionEffect(PotionEffectType.HASTE, 600, 2, false, false, false),
                 new PotionEffect(PotionEffectType.REGENERATION, 600, 1, false, false, false),
                 new PotionEffect(PotionEffectType.LUCK, 600, 1, false, false, false),
         }, new ItemStack[]{
@@ -428,7 +429,7 @@ public class Items{
         }, new Particle[]{Particle.HEART}).register(omc);
         new Armor(Categories.OMC_FORGE_CHEAT, OBSIDIAN_BOOTS, new PotionEffect[]{
                 new PotionEffect(PotionEffectType.SPEED, 600, 0, false, false, false),
-                new PotionEffect(PotionEffectType.JUMP, 600, 2, false, false, false),
+                new PotionEffect(PotionEffectType.JUMP_BOOST, 600, 2, false, false, false),
                 new PotionEffect(PotionEffectType.DOLPHINS_GRACE, 600, 2, false, false, false),
                 new PotionEffect(PotionEffectType.HEALTH_BOOST, 600, 0, false, false, false),
         }, new ItemStack[]{
@@ -445,9 +446,9 @@ public class Items{
         meta.setUnbreakable(true);
 
         OBSIDIAN_HELMET.setItemMeta(meta);
-        OBSIDIAN_HELMET.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 30);
+        OBSIDIAN_HELMET.addUnsafeEnchantment(Enchantment.PROTECTION, 30);
         OBSIDIAN_HELMET.addUnsafeEnchantment(Enchantment.THORNS, 10);
-        OBSIDIAN_HELMET.addUnsafeEnchantment(Enchantment.WATER_WORKER, 10);
+        OBSIDIAN_HELMET.addUnsafeEnchantment(Enchantment.DEPTH_STRIDER, 10);
 
     }
     static {
@@ -455,24 +456,24 @@ public class Items{
         chestMeta.setUnbreakable(true);
 
         OBSIDIAN_CHESTPLATE.setItemMeta(chestMeta);
-        OBSIDIAN_CHESTPLATE.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 30);
-        OBSIDIAN_CHESTPLATE.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 30);
+        OBSIDIAN_CHESTPLATE.addUnsafeEnchantment(Enchantment.PROTECTION, 30);
+        OBSIDIAN_CHESTPLATE.addUnsafeEnchantment(Enchantment.BLAST_PROTECTION, 30);
         OBSIDIAN_CHESTPLATE.addUnsafeEnchantment(Enchantment.THORNS, 10);
     }
     static {
         ItemMeta legsMeta = OBSIDIAN_LEGGINGS.getItemMeta();
         legsMeta.setUnbreakable(true);
         OBSIDIAN_LEGGINGS.setItemMeta(legsMeta);
-        OBSIDIAN_LEGGINGS.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 30);
-        OBSIDIAN_LEGGINGS.addUnsafeEnchantment(Enchantment.PROTECTION_FIRE, 30);
+        OBSIDIAN_LEGGINGS.addUnsafeEnchantment(Enchantment.PROTECTION, 30);
+        OBSIDIAN_LEGGINGS.addUnsafeEnchantment(Enchantment.FIRE_PROTECTION, 30);
         OBSIDIAN_LEGGINGS.addUnsafeEnchantment(Enchantment.THORNS, 10);
     }
     static {
         ItemMeta bootsMeta = OBSIDIAN_BOOTS.getItemMeta();
         bootsMeta.setUnbreakable(true);
         OBSIDIAN_BOOTS.setItemMeta(bootsMeta);
-        OBSIDIAN_BOOTS.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 30);
-        OBSIDIAN_BOOTS.addUnsafeEnchantment(Enchantment.PROTECTION_FALL, 30);
+        OBSIDIAN_BOOTS.addUnsafeEnchantment(Enchantment.PROTECTION, 30);
+        OBSIDIAN_BOOTS.addUnsafeEnchantment(Enchantment.FEATHER_FALLING, 30);
         OBSIDIAN_BOOTS.addUnsafeEnchantment(Enchantment.THORNS, 10);
     }
     @Nullable

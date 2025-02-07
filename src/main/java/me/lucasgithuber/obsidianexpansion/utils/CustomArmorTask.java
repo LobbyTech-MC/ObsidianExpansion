@@ -1,8 +1,9 @@
 package me.lucasgithuber.obsidianexpansion.utils;
 
-import io.github.mooy1.infinitylib.common.Scheduler;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import me.lucasgithuber.obsidianexpansion.ObsidianExpansion;
+import static io.github.mooy1.infinitylib.core.AbstractAddon.log;
+
+import java.util.logging.Level;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Particle;
@@ -10,11 +11,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import java.util.UUID;
-import java.util.logging.Level;
-
-import static io.github.mooy1.infinitylib.core.AbstractAddon.config;
-import static io.github.mooy1.infinitylib.core.AbstractAddon.log;
+import io.github.mooy1.infinitylib.common.Scheduler;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import me.lucasgithuber.obsidianexpansion.ObsidianExpansion;
 
 public class CustomArmorTask extends BukkitRunnable {
     private int counter = 0;
@@ -51,10 +50,6 @@ public class CustomArmorTask extends BukkitRunnable {
                 Scheduler.run(() -> log(Level.WARNING,
                         "particle"
                 ));
-                if (player == null) {
-                    this.cancel();
-                    return;
-                }
                 double radians = Math.toRadians(degree);
                 double x = Math.cos(radians) * radius;
                 double y = Math.sin(radians * waves) * heightOffset;
@@ -65,288 +60,8 @@ public class CustomArmorTask extends BukkitRunnable {
                     Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
                         player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
                         this.degree++;
-                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                            this.degree++;
-                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                this.degree++;
-                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                    this.degree++;
-                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                        this.degree++;
-                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                            this.degree++;
-                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                this.degree++;
-                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                    this.degree++;
-                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                        this.degree++;
-                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                            this.degree++;
-                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                this.degree++;
-                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                    this.degree++;
-                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                        this.degree++;
-                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                            this.degree++;
-                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                this.degree++;
-                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                    this.degree++;
-                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                        this.degree++;
-                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                            this.degree++;
-                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                this.degree++;
-                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                    this.degree++;
-                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                        this.degree++;
-                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                            this.degree++;
-                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                this.degree++;
-                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                    this.degree++;
-                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                        this.degree++;
-                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                            this.degree++;
-                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                this.degree++;
-                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                    this.degree++;
-                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                        this.degree++;
-                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                            this.degree++;
-                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                this.degree++;
-                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                    this.degree++;
-                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                        this.degree++;
-                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                            this.degree++;
-                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                this.degree++;
-                                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                    this.degree++;
-                                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                        this.degree++;
-                                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                            this.degree++;
-                                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                this.degree++;
-                                                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                    this.degree++;
-                                                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                        this.degree++;
-                                                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                            this.degree++;
-                                                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                this.degree++;
-                                                                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                    this.degree++;
-                                                                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                        this.degree++;
-                                                                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                            this.degree++;
-                                                                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                this.degree++;
-                                                                                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                    this.degree++;
-                                                                                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                        this.degree++;
-                                                                                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                            this.degree++;
-                                                                                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                this.degree++;
-                                                                                                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                    this.degree++;
-                                                                                                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                        this.degree++;
-                                                                                                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                            this.degree++;
-                                                                                                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                this.degree++;
-                                                                                                                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                    this.degree++;
-                                                                                                                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                        this.degree++;
-                                                                                                                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                            this.degree++;
-                                                                                                                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                this.degree++;
-                                                                                                                                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                    this.degree++;
-                                                                                                                                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                        this.degree++;
-                                                                                                                                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                            this.degree++;
-                                                                                                                                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                                this.degree++;
-                                                                                                                                                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                                    this.degree++;
-                                                                                                                                                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                                        this.degree++;
-                                                                                                                                                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                                            this.degree++;
-                                                                                                                                                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                                                this.degree++;
-                                                                                                                                                                                                                                                                                                Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                                                    player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                                                    this.degree++;
-                                                                                                                                                                                                                                                                                                    Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                                                        player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                                                        this.degree++;
-                                                                                                                                                                                                                                                                                                        Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                                                            player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                                                            this.degree++;
-                                                                                                                                                                                                                                                                                                            Bukkit.getScheduler().runTaskLater(ObsidianExpansion.i(), () -> {
-                                                                                                                                                                                                                                                                                                                player.getWorld().spawnParticle(Particle.END_ROD, particleLoc, 0);
-                                                                                                                                                                                                                                                                                                                this.degree++;
-
-                                                                                                                                                                                                                                                                                                            }, 0L);
-                                                                                                                                                                                                                                                                                                        }, 0L);
-                                                                                                                                                                                                                                                                                                    }, 0L);
-                                                                                                                                                                                                                                                                                                }, 0L);
-                                                                                                                                                                                                                                                                                            }, 0L);
-                                                                                                                                                                                                                                                                                        }, 0L);
-                                                                                                                                                                                                                                                                                    }, 0L);
-                                                                                                                                                                                                                                                                                }, 0L);
-                                                                                                                                                                                                                                                                            }, 0L);
-                                                                                                                                                                                                                                                                        }, 0L);
-                                                                                                                                                                                                                                                                    }, 0L);
-                                                                                                                                                                                                                                                                }, 0L);
-                                                                                                                                                                                                                                                            }, 0L);
-                                                                                                                                                                                                                                                        }, 0L);
-                                                                                                                                                                                                                                                    }, 0L);
-                                                                                                                                                                                                                                                }, 0L);
-                                                                                                                                                                                                                                            }, 0L);
-                                                                                                                                                                                                                                        }, 0L);
-                                                                                                                                                                                                                                    }, 0L);
-                                                                                                                                                                                                                                }, 0L);
-                                                                                                                                                                                                                            }, 0L);
-                                                                                                                                                                                                                        }, 0L);
-                                                                                                                                                                                                                    }, 0L);
-                                                                                                                                                                                                                }, 0L);
-                                                                                                                                                                                                            }, 0L);
-                                                                                                                                                                                                        }, 0L);
-                                                                                                                                                                                                    }, 0L);
-                                                                                                                                                                                                }, 0L);
-                                                                                                                                                                                            }, 0L);
-                                                                                                                                                                                        }, 0L);
-                                                                                                                                                                                    }, 0L);
-                                                                                                                                                                                }, 0L);
-                                                                                                                                                                            }, 0L);
-                                                                                                                                                                        }, 0L);
-                                                                                                                                                                    }, 0L);
-                                                                                                                                                                }, 0L);
-                                                                                                                                                            }, 0L);
-                                                                                                                                                        }, 0L);
-                                                                                                                                                    }, 0L);
-                                                                                                                                                }, 0L);
-                                                                                                                                            }, 0L);
-                                                                                                                                        }, 0L);
-                                                                                                                                    }, 0L);
-                                                                                                                                }, 0L);
-                                                                                                                            }, 0L);
-                                                                                                                        }, 0L);
-                                                                                                                    }, 0L);
-                                                                                                                }, 0L);
-                                                                                                            }, 0L);
-                                                                                                        }, 0L);
-                                                                                                    }, 0L);
-                                                                                                }, 0L);
-                                                                                            }, 0L);
-                                                                                        }, 0L);
-                                                                                    }, 0L);
-                                                                                }, 0L);
-                                                                            }, 0L);
-                                                                        }, 0L);
-                                                                    }, 0L);
-                                                                }, 0L);
-                                                            }, 0L);
-                                                        }, 0L);
-                                                    }, 0L);
-                                                }, 0L);
-                                            }, 0L);
-                                        }, 0L);
-                                    }, 0L);
-                                }, 0L);
-                            }, 0L);
-                        }, 0L);
-                        counter++;}, 0L);
+                        counter++;
+                    }, 0L);
                 }
 
                 if(counter>20*3 && counter<20*7){
