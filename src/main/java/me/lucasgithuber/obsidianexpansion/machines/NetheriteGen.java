@@ -73,12 +73,12 @@ public class NetheriteGen extends AContainer implements RecipeDisplayItem {
 
     @Override
     public int getCapacity() {
-        return 131072;
+        return 2800;
     }
 
     @Override
     public int getEnergyConsumption() {
-        return 16384;
+        return 350;
     }
 
     @Override

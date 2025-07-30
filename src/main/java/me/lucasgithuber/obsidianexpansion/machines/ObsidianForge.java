@@ -37,7 +37,7 @@ public final class ObsidianForge extends io.github.mooy1.infinitylib.machines.Cr
     private static final int RECIPE_SLOT = 7;
     public static final MachineRecipeType TYPE = new MachineRecipeType("omc_obsidian_forge",
             new CustomItemStack(Items.OBSIDIAN_FORGE, Items.OBSIDIAN_FORGE.getDisplayName(),
-                    "", "&cUse a categoria \"&3Equipamentos\" &cpara ver as receitas corretas!"));
+                    "", "&c请在 \"&3锻造\" &c类别查看正确的配方!"));
 
     private final int energy;
 
@@ -78,8 +78,8 @@ public final class ObsidianForge extends io.github.mooy1.infinitylib.machines.Cr
         int charge = getCharge(menu.getLocation());
         if (charge < this.energy) {
             p.sendMessage(
-                    ChatColor.RED + "Carga insuficiente!",
-                    ChatColor.GREEN + "Carga: " + ChatColor.RED + charge + ChatColor.GREEN + "/" + this.energy + " J"
+                    ChatColor.RED + "电量不足!",
+                    ChatColor.GREEN + "电能: " + ChatColor.RED + charge + ChatColor.GREEN + "/" + this.energy + " J"
             );
         } else {
             super.craft(b, menu, p);

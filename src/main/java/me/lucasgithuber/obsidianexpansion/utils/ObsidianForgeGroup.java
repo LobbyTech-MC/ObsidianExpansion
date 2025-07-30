@@ -80,9 +80,9 @@ public class ObsidianForgeGroup extends FlexItemGroup {
             1, 9
     };
     private static final ItemStack CRAFT = new CustomItemStack(Material.OBSIDIAN,
-            ChatColor.GREEN + "Crie a receita com os itens no seu inventário: ",
-            "&aLeft-Click para criar 1",
-            "&aRight-Click para criar o máximo que puder"
+            ChatColor.GREEN + "使用储存中的物品: ",
+            "&a左击 制作1个",
+            "&a右击 制作多个"
     );
     private static final ItemStack INFO = new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE, "&aInfo");
     private static final SlimefunGuideImplementation GUIDE = Slimefun.getRegistry().getSlimefunGuide(SlimefunGuideMode.SURVIVAL_MODE);
@@ -173,9 +173,9 @@ public class ObsidianForgeGroup extends FlexItemGroup {
                         ChatColor.WHITE + ItemUtils.getItemName(sfItem.getItem()),
                         "&4&l" + Slimefun.getLocalization().getMessage(player, "guide.locked"),
                         "",
-                        "&a> Click to unlock",
+                        "&a> 单击解锁",
                         "",
-                        "&7Cost: &b" + research.getCost() + " Level(s)"
+                        "&7耗费: &b" + research.getCost() + " 等级"
                 );
                 menu.addItem(i, resItem, (p, slot, item1, action) -> {
                     research.unlockFromGuide(GUIDE, p, entry.profile, sfItem, Categories.OMC_FORGE_GROUP, 0);
@@ -390,5 +390,5 @@ public class ObsidianForgeGroup extends FlexItemGroup {
     public String getVIID(ItemStack vanillaItem){
         return id;
     }
-    public static ItemStack OUTPUT_BORDER = new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6Output");
+    public static ItemStack OUTPUT_BORDER = new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&6输出");
 }

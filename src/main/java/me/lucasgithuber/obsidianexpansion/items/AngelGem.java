@@ -122,11 +122,11 @@ public class AngelGem extends SlimefunItem implements NotPlaceable, Listener {
         List<String> lore = im.getLore();
 
         for (int line = 0; line < lore.size(); line++ ) {
-            if (lore.get(line).contains("Flight: <enabled>")) {
-                lore.set(line, lore.get(line).replace("<enabled>", p.getAllowFlight() ? "Enabled" : "Disabled"));
+            if (lore.get(line).contains("飞行开关: <enabled>")) {
+                lore.set(line, lore.get(line).replace("<enabled>", p.getAllowFlight() ? "开" : "关"));
             }
-            if (lore.get(line).contains(ChatColor.GRAY + "Flight Speed: ")) {
-                lore.set(line, lore.get(line).replaceFirst(".*", ChatColor.GRAY + "Flight Speed: " + getFlySpeed()));
+            if (lore.get(line).contains(ChatColor.GRAY + "飞行速度: ")) {
+                lore.set(line, lore.get(line).replaceFirst(".*", ChatColor.GRAY + "飞行速度: " + getFlySpeed()));
             }
         }
 

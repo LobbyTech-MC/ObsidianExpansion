@@ -37,246 +37,243 @@ public class Items{
     public static final SlimefunItemStack OBSIDIAN_FORGE = new SlimefunItemStack(
             "OMC_OBSIDIAN_FORGE",
             Material.SMITHING_TABLE,
-            "&l&5Forja de obsidian",
-            "&8Usada para criar equipamentos",
-            "&8 e máquinas mais avançadas",
+            "&l&5黑曜石锻造桌",
+            "&8用于合成更先进的机器物品",
             "",
-            "&bMáquina"
+            "&b机器"
     );
     public static final SlimefunItemStack CONTAINMENT_PICK = new SlimefunItemStack(
             "OMC_CONTAINMENT_PICK",
             Material.NETHERITE_PICKAXE,
-            ChatColor.DARK_RED + "&lPicareta de contenção",
-            ChatColor.RED + "Usada para coletar spawners",
+            ChatColor.DARK_RED + "&l强化刷怪笼之镐",
+            ChatColor.RED + "用于收集刷怪笼",
             "",
-            "&8Ferramenta"
+            "&8工具"
     );
     public static final SlimefunItemStack NETHERITE_GEN = new SlimefunItemStack(
             "OMC_NETHERITE_GEN",
             Material.NETHERITE_BLOCK,
-            "&l&4Gerador de Netherite",
-            "&8Máquina geradora de netherite",
-            "&8Transforma pedregulho em netherite",
+            "&l&4下界合金转换机",
+            "&8将圆石转换为下界合金锭",
             "",
-            "&2Gerador de recursos",
+            "&2机器",
             MachineLore.energy(1600)+"/t"
     );
     public static final SlimefunItemStack OBSIDIAN_REACTOR = new SlimefunItemStack(
             "OMC_OBSIDIAN_ENERGY",
             Material.OBSIDIAN,
-            "&l&5Gerador a obsidian",
-            "&8Gera energia usando obsidian",
+            "&5&l黑曜石发电机",
+            "&8利用黑曜石发电机",
             "",
-            "aGerador de energia",
-            MachineLore.energyBuffer(32768),
-            MachineLore.energyPerSecond(8192)
+            "&a发电机",
+            MachineLore.energyBuffer(80),
+            MachineLore.energyPerSecond(80)
     );
     public static final SlimefunItemStack ADVANCED_OBSIDIAN_ENERGY = new SlimefunItemStack(
             "OMC_ADVANCED_OBSIDIAN_ENERGY",
             Material.CRYING_OBSIDIAN,
-            "&l&5Gerador a obsidian &l&1Avançado",
-            "&8Gera energia usando obsidian",
+            "&b&l高级&5&l黑曜石发电机",
+            "&8更高效的发电机",
             "",
-            "aGerador de energia",
-            MachineLore.energyBuffer(512),
+            "&a发电机",
+            MachineLore.energyBuffer(1024),
             MachineLore.energyPerSecond(1024)
     );
     public static final SlimefunItemStack ADVANCED_OBSIDIAN_GEN = new SlimefunItemStack(
             "OMC_ADVANCED_OBSIDIAN_GEN",
             Material.POLISHED_ANDESITE,
-            "&l&4Gerador de obsidian &5avançado",
-            "&5Coleta obsidian do void",
+            "&c&l黑曜石发生器",
+            "&5无限生产黑曜石",
             "",
-            "&2Gerador de recursos"
+            "&2资源发生器"
     );
     public static final SlimefunItemStack VOID_OBSIDIAN_GEN = new SlimefunItemStack(
             "OMC_VOID_OBSIDIAN_GEN",
             Material.POLISHED_BLACKSTONE_BRICKS,
-            "&l&4Gerador de obsidian &8&lVoid",
-            "&5Coleta obsidian do void &8&labsoluto",
+            "&8&l虚空&c&l黑曜石发生器",
+            "&5无限生产黑曜石",
             "",
-            "&2Gerador de recursos"
+            "&2资源发生器"
     );
     //recursos
     public static final SlimefunItemStack SINGLE_COMPRESSED_OBSIDIAN = new SlimefunItemStack(
             "OMC_COMPRESSED_OBSIDIAN",
             Material.OBSIDIAN,
-            "&7Obisidian comprimida x1",
-            "&l&7 9 &7Obsidians comprimidas em uma só",
+            "&7&l压缩黑曜石 x1",
+            "&7&l 9 &7个黑曜石",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack DOUBLE_COMPRESSED_OBSIDIAN = new SlimefunItemStack(
             "OMC_COMPRESSED_OBSIDIAN_2",
             Material.OBSIDIAN,
-            "&7Obisidian comprimida x2",
-            "&l&7 81 &7Obsidians comprimidas em uma só",
+            "&7&l压缩黑曜石 x2",
+            "&7&l 81 &7个黑曜石",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack TRIPLE_COMPRESSED_OBSIDIAN = new SlimefunItemStack(
             "OMC_COMPRESSED_OBSIDIAN_3",
             Material.OBSIDIAN,
-            "&7 Obisidian comprimida x3",
-            "&l&7 729 &7Obsidians comprimidas em uma só",
+            "&7&l压缩黑曜石 x3",
+            "&7&l 729 &7个黑曜石",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack QUADRUPLE_COMPRESSED_OBSIDIAN = new SlimefunItemStack(
             "OMC_COMPRESSED_OBSIDIAN_4",
             Material.OBSIDIAN,
-            "&8 Obisidian comprimida x4",
-            "&l&7 6561 &7Obsidians comprimidas em uma só",
+            "&8&l压缩黑曜石 x4",
+            "&l&7 6561 &7个黑曜石",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack QUINTUPLE_COMPRESSED_OBSIDIAN = new SlimefunItemStack(
             "OMC_COMPRESSED_OBSIDIAN_5",
             Material.CRYING_OBSIDIAN,
-            "&8&l Obisidian comprimida x5",
-            "&l&7 59049 &7Obsidians comprimidas em uma só",
+            "&8&l压缩黑曜石 x5",
+            "&l&7 59049 &7个黑曜石",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack OBSIDIAN_PLATE = new SlimefunItemStack(
             "OMC_OBSIDIAN_PLATE",
             Material.NETHERITE_INGOT,
-            "&l&5Placa de obsidian",
+            "&5&l黑曜石板",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack CONTAINMENT_INGOT = new SlimefunItemStack(
             "OMC_CONTAINMENT_INGOT",
             Material.NETHERITE_INGOT,
-            "&4Barra de contenção",
-            "&aUsada para fazer",
-            "&aa picareta de contenção",
+            "&4&l远古黑曜石板",
+            "&a神秘且珍奇",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack VOID_CORE = new SlimefunItemStack(
             "OMC_VOID_CORE",
             Material.NETHERITE_BLOCK,
-            ChatColor.of("#31004C")+"Núcleo do void",
-            ChatColor.of("#31004C")+"núcleo de todos",
-            ChatColor.of("#31004C")+"os acontecimentos do void",
+            ChatColor.of("#31004C")+"虚空核心",
+            ChatColor.of("#31004C")+"感受深渊的力量吧！",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack ADVANCED_VOID_CORE = new SlimefunItemStack(
             "OMC_ADVANCED_VOID_CORE",
             Material.BEDROCK,
-            "&0&lNúcleo do void &4&lAvançado",
-            "&0&lO núcleo de todos",
-            "&0&los acontecimentos do void...",
-            "&4&lPorém avançado",
+            "&4&l深渊&8&l黑曜石核心",
+            "&0&l拥有坚硬的外壳",
+            "&0&l与神秘的内芯...",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack OBSIDIAN_GEAR = new SlimefunItemStack(
             "OMC_OBSIDIAN_GEAR",
             Material.POLISHED_BLACKSTONE,
-            "&5Engrenagem de obsidian",
+            "&7&l黑曜石齿轮",
             "",
-            "&2Material"
+            "&2材料"
     );
     public static final SlimefunItemStack DRAGON_SCALE = new SlimefunItemStack(
             "OMC_DRAGON_SCALE",
             Material.AMETHYST_SHARD,
-            "&5&lEscama de dragão",
+            "&d&l龙角",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     public static final SlimefunItemStack PHANTOM_SCALE = new SlimefunItemStack(
             "OMC_PHANTOM_SCALE",
             Material.FEATHER,
-            "&5&lEscama de phantom",
+            "&5&l幽魂元",
             "",
-            "&7Recurso"
+            "&7资源"
     );
     //angel gem
     public static final SlimefunItemStack ANGEL_GEM = new SlimefunItemStack("OMC_ANGEL_GEM",
             Material.NETHERITE_BLOCK,
-            "&6Joia de voo",
+            "&6&l强化飞行核心 &5&lI",
             "",
-            "&fVoo criativo permanente.",
-            "&fVem com alguns ajustes de velocidade.",
+            "&f给予你永久飞行能力",
+            "&f可以调节飞行速度",
             "",
-            "&f&oVoe como um pássaro~",
+            "&f&o像鸟一样飞翔~",
             "",
-            "&7Velocidade máxima: 0.1",
-            "&7Flight: <enabled>",
-            "&7Flight Speed: <speed>"
+            "&7最大速度: 0.1",
+            "&7飞行开关: <enabled>",
+            "&7飞行速度: <speed>"
     );
     public static final SlimefunItemStack ANGEL_GEM_2 = new SlimefunItemStack("OMC_ANGEL_GEM_2",
             Material.NETHERITE_BLOCK,
-            "&6Joia de voo &6&l tier II",
+            "&6&l强化飞行核心 &5&lII",
             "",
-            "&fVoo criativo permanente.",
-            "&fVem com alguns ajustes de velocidade.",
+            "&f给予你永久飞行能力",
+            "&f可以调节飞行速度",
             "",
-            "&f&oVoe como uma águia~",
+            "&f&o像鸟一样飞翔~",
             "",
-            "&7Velocidade máxima: 0.2",
-            "&7Flight: <enabled>",
-            "&7Flight Speed: <speed>"
+            "&7最大速度: 0.2",
+            "&7飞行开关: <enabled>",
+            "&7飞行速度: <speed>"
     );
     public static final SlimefunItemStack ANGEL_GEM_3 = new SlimefunItemStack("OMC_ANGEL_GEM_3",
             Material.NETHERITE_BLOCK,
-            "&6Joia de voo &6&lTier III",
+            "&6&l强化飞行核心 &5&lIII",
             "",
-            "&fVoo criativo permanente.",
-            "&fVem com alguns ajustes de velocidade.",
+            "&f给予你永久飞行能力",
+            "&f可以调节飞行速度",
             "",
-            "&f&oVoe como um dragão~",
+            "&f&o像鸟一样飞翔~",
             "",
-            "&7Velocidade máxima: 0.3",
-            "&7Flight: <enabled>",
-            "&7Flight Speed: <speed>"
+            "&7最大速度: 0.3",
+            "&7飞行开关: <enabled>",
+            "&7飞行速度: <speed>"
     );
     //armadura
     public static final SlimefunItemStack OBSIDIAN_HELMET = new SlimefunItemStack(
             "OMC_HELMET",
             Material.NETHERITE_HELMET,
-            "&5&lCoroa do imperador do void",
-            ChatColor.of("#2E004A")+"&lO grande imperador do void",
-            ChatColor.of("#2E004A")+"&lgovernou com essa coroa...",
-            "&5&lDizem que um espírito controlava ele",
-            "&5&lpor meio dessa coroa...",
-            "&7Proteção do mar",
-            "&7Visão noturna",
-            "&7Respiração aquática"
+            "&5&l虚空之冠",
+            ChatColor.of("#2E004A")+"&l吾主",
+            ChatColor.of("#2E004A")+"&l一统于天下...",
+            "&5&l鬼可控否？",
+            "&5&l答曰:否...",
+            "&7满面疮痍",
+            "&7未能止其步履",
+            "&7囷囷而延",
+            "&7夜视 I",
+            "&7水下呼吸 I"
     );
     public static final SlimefunItemStack OBSIDIAN_CHESTPLATE = new SlimefunItemStack(
             "OMC_CHEST",
             Material.NETHERITE_CHESTPLATE,
-            "&5&lDefensor da escuridão",
-            ChatColor.of("#2E004A")+"&lUsado pelos corajosos soldados",
-            ChatColor.of("#2E004A")+"&lque juraram proteger o void",
-            "&7Força II",
-            "&7Resistência II",
-            "&7Saturação IV"
+            "&5&l捍卫者之铠",
+            ChatColor.of("#2E004A")+"&l醉卧沙场君莫笑",
+            ChatColor.of("#2E004A")+"&l古来征战几人回",
+            "&7力量 II",
+            "&7抗性提升 II",
+            "&7饱和 IV"
     );
     public static final SlimefunItemStack OBSIDIAN_LEGGINGS = new SlimefunItemStack(
             "OMC_LEGGINGS",
             Material.NETHERITE_LEGGINGS,
-            "&5&lCalças do conquistador sombrio",
-            ChatColor.of("#2E004A")+"&lFoi usada pelo conquistador sombrio",
-            ChatColor.of("#2E004A")+"&lem suas expedições pelo universo",
-            "&7Sorte II",
-            "&7Regeneração II",
-            "&7Pressa III"
+            "&5&l鬼泣之裤",
+            ChatColor.of("#2E004A")+"&l鬼泣于黑暗",
+            ChatColor.of("#2E004A")+"&l魂出于於菟",
+            "&7幸运 II",
+            "&7生命恢复 II",
+            "&7急迫 III"
     );
     public static final SlimefunItemStack OBSIDIAN_BOOTS = new SlimefunItemStack(
             "OMC_BOOTS",
             Material.NETHERITE_BOOTS,
-            "&5&lNascimento da destruição",
-            ChatColor.of("#2E004A")+"&lDizem que foi usada",
-            ChatColor.of("#2E004A")+"&lpelos primeiros guerreiros do void",
-            "&7Super-salto III",
-            "&7Velocidade I",
-            "&7Graça marinha III",
-            "&7Vida extra I"
+            "&5&l穹顶之靴",
+            ChatColor.of("#2E004A")+"&l当天堂塌陷，地狱升起",
+            ChatColor.of("#2E004A")+"&l人间是否还会存在",
+            "&7海豚的恩惠 III",
+            "&7速度 I",
+            "&7跳跃提升 III",
+            "&7生命提升 I"
     );
     public static void setup(ObsidianExpansion omc) {
         //pick
@@ -295,7 +292,12 @@ public class Items{
                 SlimefunItems.WITHER_PROOF_OBSIDIAN, OBSIDIAN_PLATE, SlimefunItems.WITHER_PROOF_OBSIDIAN,
                 OBSIDIAN_PLATE, SlimefunItems.ENERGIZED_CAPACITOR, OBSIDIAN_PLATE,
                 SlimefunItems.WITHER_PROOF_OBSIDIAN, OBSIDIAN_PLATE, SlimefunItems.WITHER_PROOF_OBSIDIAN
-        }).setCapacity(32768).setEnergyProduction(8192).register(omc);
+        }).setCapacity(80).setEnergyProduction(40).register(omc);
+        new ObsidianReactor(Categories.OMC_GENERATORS, ADVANCED_OBSIDIAN_ENERGY, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
+                getItem("MACHINE_CORE"), OBSIDIAN_REACTOR, getItem("MACHINE_CORE"),
+                OBSIDIAN_REACTOR, SlimefunItems.ENERGIZED_CAPACITOR, OBSIDIAN_REACTOR,
+                getItem("MACHINE_CORE"), OBSIDIAN_REACTOR, getItem("MACHINE_CORE")
+        }).setCapacity(1024).setEnergyProduction(512).register(omc);
         new AdvancedObsidianGenerator(Categories.OMC_GENERATORS, ADVANCED_OBSIDIAN_GEN, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 new ItemStack(Material.NETHERITE_PICKAXE), SlimefunItems.GEO_MINER, new ItemStack(Material.NETHERITE_PICKAXE),
                 new ItemStack(Material.DISPENSER), VOID_CORE, new ItemStack(Material.DISPENSER),
@@ -305,7 +307,7 @@ public class Items{
                 SlimefunItems.PROGRAMMABLE_ANDROID_MINER, SlimefunItems.GEO_MINER, SlimefunItems.PROGRAMMABLE_ANDROID_MINER,
                 new ItemStack(Material.LAVA_BUCKET), ADVANCED_OBSIDIAN_GEN, new ItemStack(Material.LAVA_BUCKET),
                 getItem("MACHINE_PLATE"), getItem("INFINITE_MACHINE_CORE"), getItem("MACHINE_PLATE")
-       }).energyPerTick(40000).register(omc);
+        }).energyPerTick(40000).register(omc);
         new ObsidianForge(Categories.OMC_MACHINES, OBSIDIAN_FORGE, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 OBSIDIAN_PLATE, new ItemStack(Material.CRAFTING_TABLE), OBSIDIAN_PLATE,
                 OBSIDIAN_GEAR, SlimefunItems.CRAFTING_MOTOR, OBSIDIAN_GEAR,
