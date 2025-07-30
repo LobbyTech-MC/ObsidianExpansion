@@ -63,7 +63,7 @@ public class NetheriteGen extends AContainer implements RecipeDisplayItem {
 
     @Override
     public String getInventoryTitle() {
-        return "&l&4Gerador de netherite";
+        return "&l&4下界合金转换机";
     }
 
     @Override

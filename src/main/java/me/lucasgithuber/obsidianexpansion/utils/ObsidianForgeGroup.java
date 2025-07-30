@@ -125,7 +125,7 @@ public class ObsidianForgeGroup extends FlexItemGroup {
             }
         }
 
-        ChestMenu menu = new ChestMenu("&bCrafts ");
+        ChestMenu menu = new ChestMenu("&b合成 ");
 
         if (entry.bench != null) {
             menu.addMenuClickHandler(1, (player1, i, itemStack, clickAction) -> {
