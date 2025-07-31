@@ -375,12 +375,12 @@ public class Items{
         }).register(omc);
         new DragonScale(Categories.OMC_DROPS, DRAGON_SCALE, RecipeType.MOB_DROP, new ItemStack[]{
                 null, null, null,
-                null, new CustomItemStack(Material.ENDERMAN_SPAWN_EGG, "&a末影龙"), null,
+                null, new CustomItemStack(Material.ENDERMAN_SPAWN_EGG, "&aEnder dragon"), null,
                 null, null, null
         }).register(omc);
         new PhantomScale(Categories.OMC_DROPS, PHANTOM_SCALE, RecipeType.MOB_DROP, new ItemStack[]{
                 null, null, null,
-                null, new CustomItemStack(Material.PHANTOM_SPAWN_EGG, "&a幻翼"), null,
+                null, new CustomItemStack(Material.PHANTOM_SPAWN_EGG, "&aPhantom"), null,
                 null, null, null
         }).register(omc);
 
